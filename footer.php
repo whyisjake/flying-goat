@@ -12,10 +12,21 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<?php do_action( 'flying_goat_credits' ); ?>
-			<a href="http://wordpress.org/" title="<?php esc_attr_e( 'A Semantic Personal Publishing Platform', 'flying_goat' ); ?>" rel="generator"><?php printf( __( 'Proudly powered by %s', 'flying_goat' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %1$s by %2$s.', 'flying_goat' ), 'Flying', '<a href="http://underscores.me/" rel="designer">Jake</a>' ); ?>
+			<nav>
+				<ul>
+					<li>
+						<a href="#">Visit Our Cafes</a>
+					</li>
+					<li>
+						<a href="#">Read the FCG News</a>
+					</li>
+					<li>
+						<a href="#">Contact Us</a>
+					</li>
+				</ul>
+			</nav>
+			<p><a href="mailto:info@flyinggoatcoffee.com">info@flyinggoatcoffee.com</a> &ndash; 707.433.3599</p>
+			<p class="meta">&copy; <?php date('Y'); ?> Flying Goat Coffee <a href="#">MY ACCOUNT</a> &bull; <a href="#">TERMS + CONDITIONS</a> &bull; <a href=#>PRIVACY POLICY</a> &bull; <a href="#">ORDERING + SHIPPING</a> <span class="input-append"><input class="input-small" id="appendedInputButtons" type="text"> <button class="btn" type="button">Search</button></span></p>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
