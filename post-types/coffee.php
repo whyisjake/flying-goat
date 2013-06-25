@@ -2,7 +2,7 @@
 
 function coffee_init() {
 	register_post_type( 'coffee', array(
-		'hierarchical'        => false,
+		'hierarchical'        => true,
 		'public'              => true,
 		'show_in_nav_menus'   => true,
 		'show_ui'             => true,
