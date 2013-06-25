@@ -148,3 +148,12 @@ require get_template_directory() . '/inc/customizer.php';
  */
 require get_template_directory() . '/inc/jetpack.php';
 
+/**
+ * Load the Coffee Post Type
+ */
+require get_template_directory() . '/post-types/coffee.php';
+ 
+ /**
+  * Add Woo Commerce Support
+  */
+ add_theme_support( 'woocommerce' );
