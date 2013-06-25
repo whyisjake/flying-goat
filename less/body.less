@@ -11,6 +11,16 @@
 .sidebar {
 	width: 356px;
 	border-right: 1px solid black;
+	.menu {
+		margin-left: 0px;
+		list-style-type: none;
+		.current-menu-item:before {
+			content: "\25BA\0020";
+		}
+		a {
+			color: black;
+		}
+	}
 }
 
 .product_title {

@@ -3929,6 +3929,16 @@ header form {
   width: 356px;
   border-right: 1px solid black;
 }
+.sidebar .menu {
+  margin-left: 0px;
+  list-style-type: none;
+}
+.sidebar .menu .current-menu-item:before {
+  content: "\25BA\0020";
+}
+.sidebar .menu a {
+  color: black;
+}
 .product_title {
   font-size: 16px;
 }
