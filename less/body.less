@@ -11,9 +11,18 @@
 .sidebar {
 	width: 356px;
 	border-right: 1px solid black;
+	min-height: 600px;
 	.menu {
 		margin-left: 0px;
 		list-style-type: none;
+		font-weight: bold;
+		li {
+			ul {
+				font-weight: normal;
+				margin-left: 0px;
+				list-style-type: none;
+			}
+		}
 		.current-menu-item:before {
 			content: "\25BA\0020";
 		}
@@ -25,4 +34,12 @@
 
 .product_title {
 	font-size: 16px;
+}
+
+.related.products,
+.panel.entry-content {
+	h2 {
+		font-size: 14px;
+		line-height: 18px;
+	}
 }

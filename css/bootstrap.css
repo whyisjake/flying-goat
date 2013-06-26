@@ -3928,8 +3928,15 @@ header form {
 .sidebar {
   width: 356px;
   border-right: 1px solid black;
+  min-height: 600px;
 }
 .sidebar .menu {
+  margin-left: 0px;
+  list-style-type: none;
+  font-weight: bold;
+}
+.sidebar .menu li ul {
+  font-weight: normal;
   margin-left: 0px;
   list-style-type: none;
 }
@@ -3941,6 +3948,11 @@ header form {
 }
 .product_title {
   font-size: 16px;
+}
+.related.products h2,
+.panel.entry-content h2 {
+  font-size: 14px;
+  line-height: 18px;
 }
 .site-info ul {
   border-top: 1px solid black;
