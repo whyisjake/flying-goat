@@ -9,7 +9,7 @@ get_header(); ?>
 
 <div class="row">
 
-	<?php get_sidebar(); ?>
+	<?php get_sidebar('commerce'); ?>
 
 	<div id="primary" class="content-area span9">
 	
