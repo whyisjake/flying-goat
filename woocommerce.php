@@ -11,7 +11,7 @@ get_header(); ?>
 
 	<?php get_sidebar(); ?>
 
-	<div id="primary" class="content-area span10">
+	<div id="primary" class="content-area span9">
 	
 		<div id="content" class="site-content" role="main">
 
