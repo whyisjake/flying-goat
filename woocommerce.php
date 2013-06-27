@@ -16,11 +16,6 @@ get_header(); ?>
 		<div id="content" class="site-content" role="main">
 
 			<?php woocommerce_content(); ?>
-			<?php 
-				global $woocommerce;
-				$customer = $woocommerce->customer;
-				var_dump( $customer );
-			?>
 
 		</div><!-- #content -->
 	
