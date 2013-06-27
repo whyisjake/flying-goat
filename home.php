@@ -18,42 +18,40 @@ get_header(); ?>
 				<div class="container">
 			
 					<div class="row grids">
-						<div class="span6">
+						<div class="span4">
 							<div class="row">
-								<div class="span4"><img src="http://placekitten.com/233/109" alt=""></div>
-								<div class="span2"><img src="http://placekitten.com/109/109" alt=""></div>
+								<div class="span3"><img src="http://placekitten.com/220/140" alt=""></div>
+								<div class="span1"><img src="http://placekitten.com/60/140" alt=""></div>
 							</div>
 							<div class="row">
-								<div class="span2"><img src="http://placekitten.com/109/109" alt=""></div>
-								<div class="span2"><img src="http://placekitten.com/109/109" alt=""></div>
-								<div class="span2"><img src="http://placekitten.com/109/109" alt=""></div>
+								<div class="span2"><img src="http://placekitten.com/140/140" alt=""></div>
+								<div class="span2"><img src="http://placekitten.com/140/140" alt=""></div>
 							</div>
 							<div class="row">
-								<div class="span2"><img src="http://placekitten.com/109/109" alt=""></div>
-								<div class="span4"><img src="http://placekitten.com/233/109" alt=""></div>
+								<div class="span1"><img src="http://placekitten.com/60/140" alt=""></div>
+								<div class="span3"><img src="http://placekitten.com/220/140" alt=""></div>
 							</div>
 						</div>
 						<div class="span4">
 							<div class="row">
-								<div class="span4"><img src="http://placekitten.com/233/171" alt=""></div>	
+								<div class="span4"><img src="http://placekitten.com/300/217" alt=""></div>	
 							</div>
 							<div class="row">
-								<div class="span4"><img src="http://placekitten.com/233/171" alt=""></div>	
+								<div class="span4"><img src="http://placekitten.com/300/217" alt=""></div>	
 							</div>
 						</div>
-						<div class="span6">
+						<div class="span4">
 							<div class="row">
-								<div class="span4"><img src="http://placekitten.com/233/109" alt=""></div>
-								<div class="span2"><img src="http://placekitten.com/109/109" alt=""></div>
+								<div class="span3"><img src="http://placekitten.com/220/140" alt=""></div>
+								<div class="span1"><img src="http://placekitten.com/60/140" alt=""></div>
 							</div>
 							<div class="row">
-								<div class="span2"><img src="http://placekitten.com/109/109" alt=""></div>
-								<div class="span2"><img src="http://placekitten.com/109/109" alt=""></div>
-								<div class="span2"><img src="http://placekitten.com/109/109" alt=""></div>
+								<div class="span2"><img src="http://placekitten.com/140/140" alt=""></div>
+								<div class="span2"><img src="http://placekitten.com/140/140" alt=""></div>
 							</div>
 							<div class="row">
-								<div class="span2"><img src="http://placekitten.com/109/109" alt=""></div>
-								<div class="span4"><img src="http://placekitten.com/233/109" alt=""></div>
+								<div class="span1"><img src="http://placekitten.com/60/140" alt=""></div>
+								<div class="span3"><img src="http://placekitten.com/220/140" alt=""></div>
 							</div>
 						</div>
 					</div>
