@@ -25,7 +25,7 @@
 		<div class="row">
 			<div class="span8 offset2">
 				<div class="site-branding">
-					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/flying-goat-logo.png" width="481" height="104" alt=""></a></h1>
+					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/flying-goat-logo1.png" width="620" height="115" alt=""></a></h1>
 				</div>	
 			</div>
 			<div class="span2">
