@@ -3954,6 +3954,56 @@ header form {
   font-size: 14px;
   line-height: 18px;
 }
+.product_meta a {
+  display: inline-block;
+  padding: 2px 4px;
+  font-size: 11.844px;
+  font-weight: bold;
+  line-height: 14px;
+  color: #ffffff;
+  vertical-align: baseline;
+  white-space: nowrap;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #999999;
+  padding-left: 9px;
+  padding-right: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+}
+.product_meta a:empty {
+  display: none;
+}
+.product_meta a-important {
+  background-color: #b94a48;
+}
+.product_meta a-important[href] {
+  background-color: #953b39;
+}
+.product_meta a-warning {
+  background-color: #f89406;
+}
+.product_meta a-warning[href] {
+  background-color: #c67605;
+}
+.product_meta a-success {
+  background-color: #468847;
+}
+.product_meta a-success[href] {
+  background-color: #356635;
+}
+.product_meta a-info {
+  background-color: #3a87ad;
+}
+.product_meta a-info[href] {
+  background-color: #2d6987;
+}
+.product_meta a-inverse {
+  background-color: #333333;
+}
+.product_meta a-inverse[href] {
+  background-color: #1a1a1a;
+}
 .site-info ul {
   border-top: 1px solid black;
   list-style: none;
