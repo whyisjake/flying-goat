@@ -3853,11 +3853,6 @@ header form {
 .grids .row {
   margin-bottom: 15px;
 }
-.sidebar {
-  width: 356px;
-  border-right: 1px solid black;
-  min-height: 600px;
-}
 .sidebar .menu {
   margin-left: 0px;
   list-style-type: none;
@@ -3931,6 +3926,12 @@ header form {
 }
 .product_meta a-inverse[href] {
   background-color: #1a1a1a;
+}
+.product {
+  margin: 20px;
+}
+.site-content {
+  border-left: 1px solid black;
 }
 .site-info ul {
   border-top: 1px solid black;
