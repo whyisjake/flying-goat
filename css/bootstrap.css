@@ -3922,13 +3922,13 @@ header form {
 .product_meta a-inverse[href] {
   background-color: #1a1a1a;
 }
-.site-content {
+.single .site-content {
   padding-left: 20px;
 }
-.product {
+.single .product {
   margin: 0 20px;
 }
-.site-content {
+.single .site-content {
   border-left: 1px solid black;
 }
 .site-info ul {
