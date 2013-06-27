@@ -102,6 +102,18 @@ function flying_goat_widgets_init() {
 }
 add_action( 'widgets_init', 'flying_goat_widgets_init' );
 
+function flying_goat_widgets_init1() {
+	register_sidebar( array(
+		'name'          => __( 'Commerce Sidebar', 'flying_goat' ),
+		'id'            => 'sidebar-commerce',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h1 class="widget-title">',
+		'after_title'   => '</h1>',
+	) );
+}
+add_action( 'widgets_init', 'flying_goat_widgets_init1' );
+
 /**
  * Enqueue scripts and styles
  */
