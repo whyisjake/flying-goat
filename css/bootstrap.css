@@ -822,7 +822,6 @@ code {
   color: #d14;
   background-color: #f7f7f9;
   border: 1px solid #e1e1e8;
-  white-space: nowrap;
 }
 pre {
   display: block;
@@ -3932,6 +3931,21 @@ header form {
 }
 .single .site-content {
   border-left: 1px solid black;
+}
+.quick {
+  text-align: center;
+  border-top: 1px solid black;
+  padding-top: 5px;
+  margin-bottom: 20px;
+}
+.quick a {
+  color: black;
+}
+.quick .visit {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  margin-top: -5px;
+  padding-top: 5px;
 }
 .site-info ul {
   border-top: 1px solid black;

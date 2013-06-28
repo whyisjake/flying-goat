@@ -12,19 +12,6 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<nav>
-				<ul>
-					<li>
-						<a href="#">Visit Our Cafes</a>
-					</li>
-					<li>
-						<a href="#">Read the FCG News</a>
-					</li>
-					<li>
-						<a href="#">Contact Us</a>
-					</li>
-				</ul>
-			</nav>
 			<p><a href="mailto:info@flyinggoatcoffee.com">info@flyinggoatcoffee.com</a> &ndash; 707.433.3599</p>
 			<div class="meta">&copy; <?php date('Y'); ?> Flying Goat Coffee <a href="#">MY ACCOUNT</a> &bull; <a href="#">TERMS + CONDITIONS</a> &bull; <a href=#>PRIVACY POLICY</a> &bull; <a href="#">ORDERING + SHIPPING</a> 
 				<form class="form-inline">
