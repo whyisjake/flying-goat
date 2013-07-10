@@ -21,19 +21,24 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 	 do_action( 'woocommerce_before_single_product' );
 ?>
 
-<div itemscope itemtype="http://schema.org/Product" id="product-<?php the_ID(); ?>" <?php post_class(); ?>>
+<div itemscope itemtype="http://schema.org/Product" id="product-<?php the_ID(); ?>" <?php post_class('row-fluid'); ?>>
 
-	<?php
-		/**
-		 * woocommerce_show_product_images hook
-		 *
-		 * @hooked woocommerce_show_product_sale_flash - 10
-		 * @hooked woocommerce_show_product_images - 20
-		 */
-		do_action( 'woocommerce_before_single_product_summary' );
-	?>
+	<div class="span6">
 
-	<div class="summary entry-summary">
+		<?php
+			/**
+			 * woocommerce_show_product_images hook
+			 *
+			 * @hooked woocommerce_show_product_sale_flash - 10
+			 * @hooked woocommerce_show_product_images - 20
+			 */
+			do_action( 'woocommerce_before_single_product_summary' );
+
+		?>
+	
+	</div>
+
+	<div class="summary entry-summary span6">
 
 		<?php
 			/**
@@ -46,10 +51,16 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 			 * @hooked woocommerce_template_single_meta - 40
 			 * @hooked woocommerce_template_single_sharing - 50
 			 */
-			do_action( 'woocommerce_single_product_summary' );
+			// do_action( 'woocommerce_single_product_summary' );
+			include_once 'single-product/title.php';
+			include_once 'single-product/price.php';
+			include_once 'single-product/product-attributes.php';
+			include_once 'single-product/meta.php';
 		?>
 
 	</div><!-- .summary -->
+
+</div><!-- #product-<?php the_ID(); ?> -->
 
 	<?php
 		/**
@@ -61,6 +72,6 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 		do_action( 'woocommerce_after_single_product_summary' );
 	?>
 
-</div><!-- #product-<?php the_ID(); ?> -->
+</div>
 
 <?php do_action( 'woocommerce_after_single_product' ); ?>
