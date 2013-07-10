@@ -20,7 +20,7 @@ $tabs = apply_filters( 'woocommerce_product_tabs', array() );
 if ( ! empty( $tabs ) ) : ?>
 
 	<div class="woocommerce-tabs">
-		<ul class="tabs">
+		<ul class="nav nav-tabs tabs">
 			<?php foreach ( $tabs as $key => $tab ) : ?>
 
 				<li class="<?php echo $key ?>_tab">
@@ -30,8 +30,7 @@ if ( ! empty( $tabs ) ) : ?>
 			<?php endforeach; ?>
 		</ul>
 		<?php foreach ( $tabs as $key => $tab ) : ?>
-
-			<div class="panel entry-content" id="tab-<?php echo $key ?>">
+			<div class="panel entry-content" id="tab-<?php echo $key ?>" class="<?php ( $tab['priority'] == 10 ) ? 'active' : '' ; ?>">
 				<?php call_user_func( $tab['callback'], $key, $tab ) ?>
 			</div>
 
