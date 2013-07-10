@@ -4605,7 +4605,9 @@ header form {
   border: inherit;
 }
 .woocommerce-tabs .description_tab a,
-.woocommerce-tabs .additional_information_tab a {
+.woocommerce-tabs .description_tab a:hover,
+.woocommerce-tabs .additional_information_tab a,
+.woocommerce-tabs .additional_information_tab a:hover {
   border-right: 1px solid black;
 }
 .site-info ul {
