@@ -18,7 +18,7 @@ $attributes = $product->get_attributes();
 
 if ( empty( $attributes ) && ( ! $product->enable_dimensions_display() || ( ! $product->has_dimensions() && ! $product->has_weight() ) ) ) return;
 ?>
-<table class="shop_attributes">
+<table class="shop_attributes table table-condensed">
 
 	<?php if ( $product->enable_dimensions_display() ) : ?>
 
