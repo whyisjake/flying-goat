@@ -5203,6 +5203,12 @@ header form {
   list-style-type: none;
   margin-left: 0px;
 }
+.rows {
+  margin-bottom: 7px;
+}
+.rows img {
+  margin-right: 7px;
+}
 .site-info {
   margin-bottom: 40px;
 }
