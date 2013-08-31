@@ -5125,6 +5125,84 @@ header form {
 .comment-form-comment label {
   display: block;
 }
+.checkout {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.checkout th,
+.checkout td {
+  padding: 8px;
+  line-height: 20px;
+  text-align: left;
+  vertical-align: top;
+  border-top: 1px solid #dddddd;
+}
+.checkout th {
+  font-weight: bold;
+}
+.checkout thead th {
+  vertical-align: bottom;
+}
+.checkout caption + thead tr:first-child th,
+.checkout caption + thead tr:first-child td,
+.checkout colgroup + thead tr:first-child th,
+.checkout colgroup + thead tr:first-child td,
+.checkout thead:first-child tr:first-child th,
+.checkout thead:first-child tr:first-child td {
+  border-top: 0;
+}
+.checkout tbody + tbody {
+  border-top: 2px solid #dddddd;
+}
+.checkout .table {
+  background-color: #ffffff;
+}
+.form-row {
+  *zoom: 1;
+}
+.form-row:before,
+.form-row:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.form-row:after {
+  clear: both;
+}
+.form-row select {
+  float: right;
+  max-width: 200px;
+}
+.form-row label {
+  margin-right: 20px;
+}
+.form-row .input-text {
+  float: right;
+}
+.col2-set {
+  *zoom: 1;
+}
+.col2-set:before,
+.col2-set:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.col2-set:after {
+  clear: both;
+}
+.col-1 {
+  width: 45%;
+  float: left;
+}
+.col-2 {
+  width: 45%;
+  float: right;
+}
+.payment_methods {
+  list-style-type: none;
+  margin-left: 0px;
+}
 .site-info {
   margin-bottom: 40px;
 }
