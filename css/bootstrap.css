@@ -4588,7 +4588,6 @@ header form {
   font-size: 12px;
 }
 .type-product table th {
-  width: 135px;
   font-weight: normal;
   text-transform: uppercase;
   border: 0px;
@@ -4753,6 +4752,9 @@ header form {
 }
 .sidebar aside ul:after {
   clear: both;
+}
+.shop_attributes {
+  color: #131107;
 }
 .cart_totals table,
 .shop_table {

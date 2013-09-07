@@ -49,7 +49,7 @@ get_header(); ?>
 					</div>
 
 
-					<div class="pull-left right">
+					<div class="pull-left">
 
 						<div class="rows">
 							<img src="http://placekitten.com/234/115" alt="">
