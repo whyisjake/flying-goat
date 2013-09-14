@@ -36,7 +36,7 @@
 		</div>
 		<nav id="site-navigation" class="navigation-main" role="navigation">
 		
-		<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav nav-tabs' ) ); ?>
+		<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav nav-tabs nav-justified' ) ); ?>
 		
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
