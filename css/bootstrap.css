@@ -4455,8 +4455,27 @@ header form {
 .site-footer:after {
   clear: both;
 }
-.grids .row {
+.rows {
+  margin-bottom: 7px;
+}
+.rows img {
+  margin-right: 7px;
+}
+.grids {
   margin-bottom: 15px;
+}
+.grids .left-col {
+  margin-right: 2px;
+}
+.grids .middle-col {
+  margin-left: 1px;
+}
+.grids .middle-col .rows img {
+  margin: 0px;
+}
+.grids .right-col .rows img {
+  margin-right: 0px;
+  margin-left: 7px;
 }
 .sidebar .menu {
   margin-left: 0px;
@@ -5204,12 +5223,6 @@ header form {
 .payment_methods {
   list-style-type: none;
   margin-left: 0px;
-}
-.rows {
-  margin-bottom: 7px;
-}
-.rows img {
-  margin-right: 7px;
 }
 .site-info {
   margin-bottom: 40px;

@@ -16,7 +16,7 @@ get_header(); ?>
 				
 				<div class="span12">
 
-					<div class="pull-left left">
+					<div class="pull-left left-col">
 
 						<div class="rows">
 							<img src="http://placekitten.com/234/115" alt="">
@@ -36,7 +36,7 @@ get_header(); ?>
 
 					</div>
 
-					<div class="pull-left middle">
+					<div class="pull-left middle-col">
 
 						<div class="rows">
 							<img src="http://placekitten.com/203/176" alt="">
@@ -49,7 +49,7 @@ get_header(); ?>
 					</div>
 
 
-					<div class="pull-left">
+					<div class="pull-right right-col">
 
 						<div class="rows">
 							<img src="http://placekitten.com/234/115" alt="">

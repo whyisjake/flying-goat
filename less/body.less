@@ -4,10 +4,35 @@
 	.container;
 }
 
-.grids .row {
-	margin-bottom:15px;
+.rows {
+	margin-bottom: 7px;
+	img {
+		margin-right: 7px;
+	}
 }
 
+.grids {
+	margin-bottom:15px;
+	.left-col {
+		margin-right: 2px;
+	}
+	.middle-col {
+		margin-left: 1px;
+		.rows {
+			img {
+				margin: 0px;
+			}
+		}
+	}
+	.right-col {
+		.rows {
+			img {
+				margin-right: 0px;
+				margin-left: 7px;
+			}
+		}
+	}
+}
 .sidebar {
 	.menu {
 		margin-left: 0px;
@@ -231,11 +256,4 @@
 .payment_methods {
 	list-style-type: none;
 	margin-left: 0px;
-}
-
-.rows {
-	margin-bottom: 7px;
-	img {
-		margin-right: 7px;
-	}
 }
