@@ -165,7 +165,13 @@ require get_template_directory() . '/inc/jetpack.php';
  */
 require get_template_directory() . '/post-types/coffee.php';
  
- /**
-  * Add Woo Commerce Support
-  */
- add_theme_support( 'woocommerce' );
+/**
+ * Add Woo Commerce Support
+ */
+add_theme_support( 'woocommerce' );
+
+/**
+ * Add Cheezcap Options
+ */
+require get_template_directory() . '/inc/cheezcap/cheezcap.php';
+require get_template_directory() . '/inc/cheezcap-config.php';

@@ -19,19 +19,19 @@ get_header(); ?>
 					<div class="pull-left left-col">
 
 						<div class="rows">
-							<img src="http://placekitten.com/234/115" alt="">
-							<img src="http://placekitten.com/112/115" alt="">
+							<img src="<?php echo esc_url( make_get_cap_option( 'left_top_left' ) ); ?>" alt="">
+							<img src="<?php echo esc_url( make_get_cap_option( 'left_top_right' ) ); ?>" alt="">
 						</div>
 
 						<div class="rows">
-							<img src="http://placekitten.com/112/115" alt="">
-							<img src="http://placekitten.com/112/115" alt="">
-							<img src="http://placekitten.com/112/115" alt="">
+							<img src="<?php echo esc_url( make_get_cap_option( 'left_middle_left' ) ); ?>" alt="">
+							<img src="<?php echo esc_url( make_get_cap_option( 'left_middle_middle' ) ); ?>" alt="">
+							<img src="<?php echo esc_url( make_get_cap_option( 'left_middle_right' ) ); ?>" alt="">
 						</div>
 
 						<div class="rows">
-							<img src="http://placekitten.com/112/115" alt="">
-							<img src="http://placekitten.com/234/115" alt="">
+							<img src="<?php echo esc_url( make_get_cap_option( 'left_bottom_left' ) ); ?>" alt="">
+							<img src="<?php echo esc_url( make_get_cap_option( 'left_bottom_right' ) ); ?>" alt="">
 						</div>
 
 					</div>
@@ -39,11 +39,11 @@ get_header(); ?>
 					<div class="pull-left middle-col">
 
 						<div class="rows">
-							<img src="http://placekitten.com/203/176" alt="">
+							<img src="<?php echo esc_url( make_get_cap_option( 'center_top' ) ); ?>" alt="">
 						</div>
 
 						<div class="rows">
-							<img src="http://placekitten.com/203/176" alt="">
+							<img src="<?php echo esc_url( make_get_cap_option( 'center_bottom' ) ); ?>" alt="">
 						</div>
 					
 					</div>
@@ -52,19 +52,19 @@ get_header(); ?>
 					<div class="pull-right right-col">
 
 						<div class="rows">
-							<img src="http://placekitten.com/234/115" alt="">
-							<img src="http://placekitten.com/112/115" alt="">
+							<img src="<?php echo esc_url( make_get_cap_option( 'right_top_left' ) ); ?>" alt="">
+							<img src="<?php echo esc_url( make_get_cap_option( 'right_top_right' ) ); ?>" alt="">
 						</div>
 
 						<div class="rows">
-							<img src="http://placekitten.com/112/115" alt="">
-							<img src="http://placekitten.com/112/115" alt="">
-							<img src="http://placekitten.com/112/115" alt="">
+							<img src="<?php echo esc_url( make_get_cap_option( 'right_middle_left' ) ); ?>" alt="">
+							<img src="<?php echo esc_url( make_get_cap_option( 'right_middle_middle' ) ); ?>" alt="">
+							<img src="<?php echo esc_url( make_get_cap_option( 'right_middle_right' ) ); ?>" alt="">
 						</div>
 
 						<div class="rows">
-							<img src="http://placekitten.com/112/115" alt="">
-							<img src="http://placekitten.com/234/115" alt="">
+							<img src="<?php echo esc_url( make_get_cap_option( 'right_bottom_left' ) ); ?>" alt="">
+							<img src="<?php echo esc_url( make_get_cap_option( 'right_bottom_right' ) ); ?>" alt="">
 						</div>
 
 					</div>
