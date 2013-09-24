@@ -4456,10 +4456,10 @@ header form {
   clear: both;
 }
 .rows {
-  margin-bottom: 7px;
+  margin-bottom: 5px;
 }
 .rows img {
-  margin-right: 7px;
+  margin-right: 3px;
 }
 .grids {
   margin-bottom: 15px;
@@ -4475,7 +4475,7 @@ header form {
 }
 .grids .right-col .rows img {
   margin-right: 0px;
-  margin-left: 7px;
+  margin-left: 2px;
 }
 .sidebar .menu {
   margin-left: 0px;

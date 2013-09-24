@@ -23,12 +23,12 @@
 	<?php do_action( 'before' ); ?>
 	<header id="masthead" class="site-header" role="banner">
 		<div class="row">
-			<div class="span8 offset2">
+			<div class="span6 offset3">
 				<div class="site-branding">
 					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/flying-goat-logo1.png" width="620" height="115" alt=""></a></h1>
 				</div>	
 			</div>
-			<div class="span2">
+			<div class="span3">
 				<form action="">
 					<input type="search" class="input-small search" name="s" id="s" placeholder="Search">
 				</form>
@@ -36,7 +36,20 @@
 		</div>
 		<nav id="site-navigation" class="navigation-main" role="navigation">
 		
-		<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav nav-tabs' ) ); ?>
+			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav nav-tabs' ) ); ?>
+
+			<div class="pull-right">
+				<span class="facebook">
+					<a href="https://www.facebook.com/pages/Flying-Goat-Coffee/42794407187" title="Flying Goat Coffee on Facebook">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/facebook.png" alt="Flying Goat Coffee on Facebook">
+					</a>
+				</span>
+				<span class="facebook">
+					<a href="https://twitter.com/FLYGOATCOFFEE" title="Flying Goat Coffee on Twitter">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/twitter.png" alt="Flying Goat Coffee on Twitter">
+					</a>
+				</span>
+			</div>
 		
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
