@@ -37,19 +37,6 @@
 		<nav id="site-navigation" class="navigation-main" role="navigation">
 		
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav nav-tabs' ) ); ?>
-
-			<div class="pull-right">
-				<span class="facebook">
-					<a href="https://www.facebook.com/pages/Flying-Goat-Coffee/42794407187" title="Flying Goat Coffee on Facebook">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/facebook.png" alt="Flying Goat Coffee on Facebook">
-					</a>
-				</span>
-				<span class="facebook">
-					<a href="https://twitter.com/FLYGOATCOFFEE" title="Flying Goat Coffee on Twitter">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/twitter.png" alt="Flying Goat Coffee on Twitter">
-					</a>
-				</span>
-			</div>
 		
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->

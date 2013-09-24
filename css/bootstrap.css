@@ -2587,10 +2587,35 @@ input[type="submit"].btn.btn-mini {
 }
 .nav-tabs > li > a,
 .nav-pills > li > a {
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 13px;
+  padding-left: 13px;
   margin-right: 2px;
   line-height: 14px;
+}
+.social {
+  padding-top: 15px;
+  position: relative !important;
+}
+.menu-item-193,
+.menu-item-241 {
+  margin-left: 20px;
+  background: url('../img/twitter.png') no-repeat;
+  text-indent: -9999px;
+}
+.menu-item-193 a,
+.menu-item-241 a {
+  border-right: 0px !important;
+  padding-top: 15px;
+  position: relative !important;
+}
+.menu-item-194,
+.menu-item-242 {
+  background: url('../img/facebook.png') no-repeat;
+  text-indent: -9999px;
+}
+.menu-item-194 a,
+.menu-item-242 a {
+  border-right: 0px !important;
 }
 .nav-tabs > li:last-child > a,
 .nav-pills > li:last-child > a {
