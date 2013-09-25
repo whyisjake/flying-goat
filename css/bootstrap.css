@@ -5183,36 +5183,36 @@ header form {
 .comment-form-comment label {
   display: block;
 }
-.checkout {
+table.checkout {
   width: 100%;
   margin-bottom: 20px;
 }
-.checkout th,
-.checkout td {
+table.checkout th,
+table.checkout td {
   padding: 8px;
   line-height: 20px;
   text-align: left;
   vertical-align: top;
   border-top: 1px solid #dddddd;
 }
-.checkout th {
+table.checkout th {
   font-weight: bold;
 }
-.checkout thead th {
+table.checkout thead th {
   vertical-align: bottom;
 }
-.checkout caption + thead tr:first-child th,
-.checkout caption + thead tr:first-child td,
-.checkout colgroup + thead tr:first-child th,
-.checkout colgroup + thead tr:first-child td,
-.checkout thead:first-child tr:first-child th,
-.checkout thead:first-child tr:first-child td {
+table.checkout caption + thead tr:first-child th,
+table.checkout caption + thead tr:first-child td,
+table.checkout colgroup + thead tr:first-child th,
+table.checkout colgroup + thead tr:first-child td,
+table.checkout thead:first-child tr:first-child th,
+table.checkout thead:first-child tr:first-child td {
   border-top: 0;
 }
-.checkout tbody + tbody {
+table.checkout tbody + tbody {
   border-top: 2px solid #dddddd;
 }
-.checkout .table {
+table.checkout .table {
   background-color: #ffffff;
 }
 .form-row {
@@ -5294,6 +5294,16 @@ ul.products li mark {
 }
 #s {
   height: 24px;
+}
+.chzn-container {
+  width: 200px !important;
+}
+.required {
+  border-bottom: 0px !important;
+  color: red;
+}
+#order_comments_field .input-text {
+  width: 142px;
 }
 .site-info {
   margin-bottom: 40px;

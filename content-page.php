@@ -9,9 +9,11 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<h1 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-		<div class="metainfo">
-			<p><?php the_author_posts_link(); ?> - <a href="<?php the_permalink(); ?>"><?php the_date(); ?></a></p>
-		</div>
+		<?php if ( is_archive() ) : ?>
+			<div class="metainfo">
+				<p><?php the_author_posts_link(); ?> - <a href="<?php the_permalink(); ?>"><?php the_date(); ?></a></p>
+			</div>
+		<?php endif; ?>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
