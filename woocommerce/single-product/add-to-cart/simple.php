@@ -38,9 +38,9 @@ if ( ! $product->is_purchasable() ) return;
 	 				'max_value' => apply_filters( 'woocommerce_quantity_input_max', $product->backorders_allowed() ? '' : $product->get_stock_quantity(), $product )
 	 			) );
 	 	?>
-
-	 	<button type="submit" class="btn btn-inverse single_add_to_cart_button btn btn-inverse button alt"><?php echo apply_filters('single_add_to_cart_text', __( 'Add to cart', 'woocommerce' ), $product->product_type); ?></button>
-
+	 	<div>
+	 		<button type="submit" class="btn btn-inverse single_add_to_cart_button btn btn-inverse button alt"><?php echo apply_filters('single_add_to_cart_text', __( 'Add to cart', 'woocommerce' ), $product->product_type); ?></button>
+	 	</div>
 	 	<?php do_action('woocommerce_after_add_to_cart_button'); ?>
 
 	</form>
