@@ -111,14 +111,14 @@
 	padding: 0;
 	.pull-left;
 	text-align: center;
-	border: 1px solid #c7c0c7;
+	border: 1px solid #c7c0c7 !important;
 	box-shadow: inset 0 0 2px 0 #f7f6f7;
 	-webkit-box-shadow: inset 0 0 2px 0 #f7f6f7;
 	-moz-box-shadow: inset 0 0 2px 0 #f7f6f7;
 	font-weight: bold;
 	border-radius: 2px;
-	margin-top: 7px;
-	margin-right: 10px;
+	margin-top: 0px;
+	margin-right: 0px;
 }
 
 .woocommerce .quantity .plus,
@@ -129,7 +129,7 @@
 .woocommerce-page .quantity .minus,
 .woocommerce #content .quantity .minus,
 .woocommerce-page #content .quantity .minus {
-	display:none;
+	display:none !important;
 }
 
 
@@ -256,4 +256,15 @@
 .payment_methods {
 	list-style-type: none;
 	margin-left: 0px;
+}
+
+.shop_attributes {
+	div {
+		margin-bottom: 10px;
+		font-size: 13px;
+		.attr {
+			text-transform: uppercase;
+			font-size: 14px;
+		}
+	}
 }

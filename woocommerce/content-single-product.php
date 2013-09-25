@@ -41,6 +41,9 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 	<div class="summary entry-summary span6">
 
 		<?php
+
+			remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30 );
+			// add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 6 );
 			/**
 			 * woocommerce_single_product_summary hook
 			 *
@@ -51,11 +54,11 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 			 * @hooked woocommerce_template_single_meta - 40
 			 * @hooked woocommerce_template_single_sharing - 50
 			 */
-			// do_action( 'woocommerce_single_product_summary' );
-			include_once 'single-product/title.php';
-			include_once 'single-product/price.php';
-			include_once 'single-product/product-attributes.php';
-			include_once 'single-product/meta.php';
+			do_action( 'woocommerce_single_product_summary' );
+			// include_once 'single-product/title.php';
+			// include_once 'single-product/price.php';
+			// include_once 'single-product/product-attributes.php';
+			// include_once 'single-product/meta.php';
 		?>
 
 	</div><!-- .summary -->

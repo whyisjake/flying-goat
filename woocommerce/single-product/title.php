@@ -11,6 +11,5 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 ?>
 <h1 itemprop="name" class="product_title entry-title">
-	<?php the_title(); ?>
-	<?php include_once 'add-to-cart/simple.php'; ?>
+	<?php the_title(); ?> <?php echo woocommerce_template_single_add_to_cart(); ?>
 </h1>

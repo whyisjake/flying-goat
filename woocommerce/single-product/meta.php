@@ -22,13 +22,13 @@ global $post, $product;
 	<div>
 	<?php
 		$size = sizeof( get_the_terms( $post->ID, 'product_cat' ) );
-		echo $product->get_categories( ', ', '<span class="posted_in">' . _n( 'Category:', 'Categories:', $size, 'woocommerce' ) . ' ', '</span>' );
+		echo str_replace(',' , '', $product->get_categories( ', ', '<span class="posted_in">' . _n( 'Category:', 'Categories:', $size, 'woocommerce' ) . ' ', '</span>' ) );
 	?>
 	</div>
 	<div>
 	<?php
 		$size = sizeof( get_the_terms( $post->ID, 'product_tag' ) );
-		echo $product->get_tags( ', ', '<span class="tagged_as">' . _n( 'Tag:', 'Tags:', $size, 'woocommerce' ) . ' ', '</span>' );
+		echo str_replace(',' , '', $product->get_tags( ', ', '<span class="tagged_as">' . _n( 'Tag:', 'Tags:', $size, 'woocommerce' ) . ' ', '</span>' ) );
 	?>
 	</div>
 
