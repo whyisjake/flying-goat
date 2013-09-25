@@ -5272,6 +5272,26 @@ header form {
 br {
   display: none;
 }
+ul.products {
+  margin: 20px 0px;
+}
+ul.products li {
+  display: inline-block;
+  width: 30%;
+  margin-bottom: 20px;
+}
+ul.products li a .amount,
+ul.products li a h3 {
+  font-size: 16px;
+  line-height: 120%;
+  color: black;
+}
+ul.products li a:hover {
+  text-decoration: none;
+}
+ul.products li mark {
+  background-color: transparent;
+}
 .site-info {
   margin-bottom: 40px;
 }
