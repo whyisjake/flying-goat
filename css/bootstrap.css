@@ -2653,7 +2653,7 @@ input[type="submit"].btn.btn-mini {
   color: black;
   /* background-color: @bodyBackground; */
 
-  border: 1px solid black;
+  border-right: 1px solid black;
   border-bottom-color: black;
   cursor: default;
 }
