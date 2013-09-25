@@ -19,7 +19,7 @@ global $woocommerce, $product, $post;
 		<tbody>
 			<?php $loop = 0; foreach ( $attributes as $name => $options ) : $loop++; ?>
 				<tr>
-					<td class="label"><label for="<?php echo sanitize_title($name); ?>"><?php echo $woocommerce->attribute_label( $name ); ?></label></td>
+					<td class=""><label for="<?php echo sanitize_title($name); ?>"><?php echo $woocommerce->attribute_label( $name ); ?></label></td>
 					<td class="value"><select id="<?php echo esc_attr( sanitize_title($name) ); ?>" name="attribute_<?php echo sanitize_title($name); ?>">
 						<option value=""><?php echo __( 'Choose an option', 'woocommerce' ) ?>&hellip;</option>
 						<?php
@@ -79,7 +79,10 @@ global $woocommerce, $product, $post;
 		<div class="single_variation"></div>
 		<div class="variations_button">
 			<input type="hidden" name="variation_id" value="" />
-			<?php woocommerce_quantity_input(); ?>
+			<div>
+				<?php woocommerce_quantity_input(); ?>
+			</div>
+			<div class="clearfix"></div>
 			<button type="submit" class="single_add_to_cart_button button alt"><?php echo apply_filters('single_add_to_cart_text', __( 'Add to cart', 'woocommerce' ), $product->product_type); ?></button>
 		</div>
 	</div>

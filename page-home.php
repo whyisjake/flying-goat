@@ -1,5 +1,6 @@
 <?php
 /**
+ * Template Name: Home Page
  * Home page template file
  *
  * @package flying-goat

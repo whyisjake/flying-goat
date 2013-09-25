@@ -8,7 +8,10 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<h1 class="entry-title"><?php the_title(); ?></h1>
+		<h1 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+		<div class="metainfo">
+			<p><?php the_author_posts_link(); ?> - <a href="<?php the_permalink(); ?>"><?php the_date(); ?></a></p>
+		</div>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
@@ -21,4 +24,7 @@
 		?>
 	</div><!-- .entry-content -->
 	<?php edit_post_link( __( 'Edit', 'flying_goat' ), '<footer class="entry-meta"><span class="edit-link">', '</span></footer>' ); ?>
+
+	<hr>
+
 </article><!-- #post-## -->

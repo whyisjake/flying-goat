@@ -4456,10 +4456,10 @@ header h1 {
   word-spacing: -5px;
 }
 header h1 a {
-  color: white;
+  color: black;
 }
 header h1 a:hover {
-  color: inherit;
+  color: black;
   text-decoration: none;
 }
 header h1 span {
