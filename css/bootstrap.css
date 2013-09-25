@@ -5261,6 +5261,9 @@ header form {
   text-transform: uppercase;
   font-size: 14px;
 }
+br {
+  display: none;
+}
 .site-info {
   margin-bottom: 40px;
 }
