@@ -2637,6 +2637,9 @@ input[type="submit"].btn.btn-mini {
   padding-bottom: 4px;
   line-height: 20px;
   border-right: 1px solid black;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
   color: black;
 }
 .nav-tabs > li > a:hover,
