@@ -16,6 +16,9 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
  * @see woocommerce_default_product_tabs()
  */
 
-echo '<hr>';
+?>
 
-the_content();
+<div class="clearfix"></div>
+<hr>
+
+<?php the_content(); ?>
