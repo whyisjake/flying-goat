@@ -5292,6 +5292,9 @@ ul.products li a:hover {
 ul.products li mark {
   background-color: transparent;
 }
+#s {
+  height: 24px;
+}
 .site-info {
   margin-bottom: 40px;
 }
