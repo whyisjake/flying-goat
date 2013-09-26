@@ -77,40 +77,6 @@ get_header(); ?>
 
 		</div>
 
-		<div class="row">
-			<div class="span12 quick">
-			
-				<div class="row">
-			
-					<div class="span4">
-						
-						<a href="#">Visit Our Cafes</a>
-						
-					</div>
-					
-					<div class="span4">
-					
-						<div class="visit">
-							
-							<a href="#">Read the FCG News</a>
-							
-						</div>
-						
-					</div>
-					
-					<div class="span4">
-						
-						<a href="#">Contact Us</a>
-						
-					</div>
-				
-				</div>
-			
-			</div>
-			
-		</div>
-
-		</div><!-- #content -->
 	</div><!-- #primary -->
 	
 <?php get_footer(); ?>
