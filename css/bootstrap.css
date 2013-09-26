@@ -5359,3 +5359,8 @@ ul.products li mark {
   display: inline-block;
   margin-left: 10px;
 }
+.jsbutton {
+  background-color: black;
+  border: 0px;
+  color: #fff;
+}

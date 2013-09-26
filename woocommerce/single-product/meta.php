@@ -19,18 +19,6 @@ global $post, $product;
 		<span itemprop="productID" class="sku_wrapper"><?php _e( 'SKU:', 'woocommerce' ); ?> <span class="sku"><?php echo $product->get_sku(); ?></span>.</span>
 	<?php endif; ?>
 	</div>
-	<div>
-	<?php
-		$size = sizeof( get_the_terms( $post->ID, 'product_cat' ) );
-		echo str_replace(',' , '', $product->get_categories( ', ', '<span class="posted_in">' . _n( 'Category:', 'Categories:', $size, 'woocommerce' ) . ' ', '</span>' ) );
-	?>
-	</div>
-	<div>
-	<?php
-		$size = sizeof( get_the_terms( $post->ID, 'product_tag' ) );
-		echo str_replace(',' , '', $product->get_tags( ', ', '<span class="tagged_as">' . _n( 'Tag:', 'Tags:', $size, 'woocommerce' ) . ' ', '</span>' ) );
-	?>
-	</div>
 
 	<?php do_action( 'woocommerce_product_meta_end' ); ?>
 

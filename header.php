@@ -28,11 +28,6 @@
 					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/flying-goat-logo1.png" width="620" height="115" alt=""></a></h1>
 				</div>	
 			</div>
-			<div class="span3">
-				<form action="">
-					<input type="search" class="input-small search" name="s" id="s" placeholder="Search">
-				</form>
-			</div>
 		</div>
 		<nav id="site-navigation" class="navigation-main" role="navigation">
 		
