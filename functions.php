@@ -214,7 +214,6 @@ function goat_generate_image_modal( $str, $size ) {
 
 	if ( intval( $str ) ) {
 		$url = wp_get_attachment_image_src( $str, $size );
-		print_r( get_post_meta( $str ) );
 		$meta = get_post_meta( $str, 'link_url', true );
 		$rand = mt_rand();
 		if ( $meta ) {
