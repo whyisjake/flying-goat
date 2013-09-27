@@ -217,7 +217,7 @@ function goat_generate_image_modal( $str, $size ) {
 		$meta = get_post_meta( $str, 'link_url', true );
 		$rand = mt_rand();
 		if ( $meta ) {
-			$output .= '<a href="' . esc_url(  $meta ) . '" role="button" data-toggle="modal">';
+			$output .= '<a href="' . esc_url(  $meta ) . '" role="button">';
 		} else {
 			$output .= '<a href="#modal-' . $rand . '" role="button" data-toggle="modal">';
 		}
