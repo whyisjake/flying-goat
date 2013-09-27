@@ -214,17 +214,24 @@ function goat_generate_image_modal( $str, $size ) {
 
 	if ( intval( $str ) ) {
 		$url = wp_get_attachment_image_src( $str, $size );
+		$meta = get_post_meta( $str, 'link_url', true );
 		$rand = mt_rand();
-		$output .= '<a href="#modal-'. $rand . '" role="button" data-toggle="modal">';
+		if ( $meta ) {
+			$output .= '<a href="' . esc_url(  $meta ) . '" role="button" data-toggle="modal">';
+		} else {
+			$output .= '<a href="#modal-' . $rand . '" role="button" data-toggle="modal">';
+		}
 		$output .= '<img src="' . esc_url( $url[0] ) . '" class="darken" alt="' . get_the_title( $str ) . '">';
 		$output .= "</a>";
-		$output .= '<div id="modal-' . $rand . '" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">';
-		$output .= '<div class="modal-header"> <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>';
-		$output .= '<h3>' . get_the_title( $str ) . '</h3></div>';
-		$output .=	'<div class="modal-body">';
-		$output .= wp_get_attachment_image( $str, 'modal' );
-		$output .= apply_filters( 'the_content', get_post( $str )->post_content );
-		$output .= '</div></div>';
+		if ( !$meta ) :
+			$output .= '<div id="modal-' . $rand . '" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">';
+			$output .= '<div class="modal-header"> <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>';
+			$output .= '<h3>' . get_the_title( $str ) . '</h3></div>';
+			$output .=	'<div class="modal-body">';
+			$output .= wp_get_attachment_image( $str, 'modal' );
+			$output .= apply_filters( 'the_content', get_post( $str )->post_content );
+			$output .= '</div></div>';
+		endif;
 
 	} else {
 		$output = '<img src="' . esc_url( $str ) . '" class="" alt="Flying Goat Coffee">';
