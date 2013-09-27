@@ -39,7 +39,11 @@ function flying_goat_setup() {
 	 *
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	 */
-	//add_theme_support( 'post-thumbnails' );
+	add_theme_support( 'post-thumbnails' );
+	add_image_size( 'med', 230, 115, true );
+	add_image_size( 'square', 112, 115, true );
+	add_image_size( 'large', 230, 175, true );
+	add_image_size( 'modal', 530, 999 );
 
 	/**
 	 * This theme uses wp_nav_menu() in one location.
@@ -199,4 +203,28 @@ function goat_resized_remote_image_url( $url, $width, $height, $escape = true ) 
 	$thumburl = jetpack_photon_url( $url, array( 'resize' => array( $width, $height ) ) );
 
 	return ( $escape ) ? esc_url( $thumburl ) : $thumburl;
+}
+
+/**
+ * Generate a modal from a URL, or just return an image tag
+ */
+function goat_generate_image_modal( $str, $size ) {
+
+	$output = '';
+
+	if ( intval( $str ) ) {
+		$url = wp_get_attachment_image_src( $str, $size );
+		$rand = mt_rand();
+		$output .= '<a href="#modal-'. $rand . '" role="button" data-toggle="modal">';
+		$output .= '<img src="' . esc_url( $url[0] ) . '" class="darken" alt="' . get_the_title( $str ) . '">';
+		$output .= "</a>";
+		$output .= '<div id="modal-' . $rand . '" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-body">';
+		$output .= wp_get_attachment_image( $str, 'modal' );
+		$output .= '</div></div>';
+
+	} else {
+		$output = '<img src="' . esc_url( $str ) . '" class="" alt="Flying Goat Coffee">';
+	}
+	return $output;
 }

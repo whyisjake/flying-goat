@@ -20,19 +20,19 @@ get_header(); ?>
 					<div class="pull-left left-col">
 
 						<div class="rows">
-							<img src="<?php echo goat_resized_remote_image_url( make_get_cap_option( 'left_top_left' ), 230, 115 ); ?>" alt="">
-							<img src="<?php echo goat_resized_remote_image_url( make_get_cap_option( 'left_top_right' ), 112, 115 ); ?>" alt="">
+							<?php echo goat_generate_image_modal( make_get_cap_option( 'left_top_left' ), 'med' ); ?>
+							<?php echo goat_generate_image_modal( make_get_cap_option( 'left_top_right' ), 'square' ); ?>
 						</div>
 
 						<div class="rows">
-							<img src="<?php echo goat_resized_remote_image_url( make_get_cap_option( 'left_middle_left' ), 112, 115 ); ?>" alt="">
-							<img src="<?php echo goat_resized_remote_image_url( make_get_cap_option( 'left_middle_middle' ), 112, 115 ); ?>" alt="">
-							<img src="<?php echo goat_resized_remote_image_url( make_get_cap_option( 'left_middle_right' ), 112, 115 ); ?>" alt="">
+							<?php echo goat_generate_image_modal( make_get_cap_option( 'left_middle_left' ), 'square' ); ?>
+							<?php echo goat_generate_image_modal( make_get_cap_option( 'left_middle_middle' ), 'square' ); ?>
+							<?php echo goat_generate_image_modal( make_get_cap_option( 'left_middle_right' ), 'square' ); ?>
 						</div>
 
 						<div class="rows">
-							<img src="<?php echo goat_resized_remote_image_url( make_get_cap_option( 'left_bottom_left' ), 112, 115 ); ?>" alt="">
-							<img src="<?php echo goat_resized_remote_image_url( make_get_cap_option( 'left_bottom_right' ), 230, 115 ); ?>" alt="">
+							<?php echo goat_generate_image_modal( make_get_cap_option( 'left_bottom_left' ), 'square' ); ?>
+							<?php echo goat_generate_image_modal( make_get_cap_option( 'left_bottom_right' ), 'med' ); ?>
 						</div>
 
 					</div>
@@ -40,11 +40,11 @@ get_header(); ?>
 					<div class="pull-left middle-col">
 
 						<div class="rows">
-							<img src="<?php echo goat_resized_remote_image_url( make_get_cap_option( 'center_top' ), 230, 175 ); ?>" alt="">
+							<?php echo goat_generate_image_modal( make_get_cap_option( 'center_top' ), 'large' ); ?>
 						</div>
 
 						<div class="rows">
-							<img src="<?php echo goat_resized_remote_image_url( make_get_cap_option( 'center_bottom' ), 230, 175 ); ?>" alt="">
+							<?php echo goat_generate_image_modal( make_get_cap_option( 'center_bottom' ), 'large' ); ?>
 						</div>
 					
 					</div>
@@ -53,19 +53,19 @@ get_header(); ?>
 					<div class="pull-right right-col">
 
 						<div class="rows">
-							<img src="<?php echo goat_resized_remote_image_url( make_get_cap_option( 'right_top_left' ), 230, 115 ); ?>" alt="">
-							<img src="<?php echo goat_resized_remote_image_url( make_get_cap_option( 'right_top_right' ), 112, 115 ); ?>" alt="">
+							<?php echo goat_generate_image_modal( make_get_cap_option( 'right_top_left' ), 'med' ); ?>
+							<?php echo goat_generate_image_modal( make_get_cap_option( 'right_top_right' ), 'square' ); ?>
 						</div>
 
 						<div class="rows">
-							<img src="<?php echo goat_resized_remote_image_url( make_get_cap_option( 'right_middle_left' ), 112, 115 ); ?>" alt="">
-							<img src="<?php echo goat_resized_remote_image_url( make_get_cap_option( 'right_middle_middle' ), 112, 115 ); ?>" alt="">
-							<img src="<?php echo goat_resized_remote_image_url( make_get_cap_option( 'right_middle_right' ), 112, 115 ); ?>" alt="">
+							<?php echo goat_generate_image_modal( make_get_cap_option( 'right_middle_left' ), 'square' ); ?>
+							<?php echo goat_generate_image_modal( make_get_cap_option( 'right_middle_middle' ), 'square' ); ?>
+							<?php echo goat_generate_image_modal( make_get_cap_option( 'right_middle_right' ), 'square' ); ?>
 						</div>
 
 						<div class="rows">
-							<img src="<?php echo goat_resized_remote_image_url( make_get_cap_option( 'right_bottom_left' ), 112, 115 ); ?>" alt="">
-							<img src="<?php echo goat_resized_remote_image_url( make_get_cap_option( 'right_bottom_right' ), 112, 230 ); ?>" alt="">
+							<?php echo goat_generate_image_modal( make_get_cap_option( 'right_bottom_left' ), 'square' ); ?>
+							<?php echo goat_generate_image_modal( make_get_cap_option( 'right_bottom_right' ), 'med' ); ?>
 						</div>
 
 					</div>

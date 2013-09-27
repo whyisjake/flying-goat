@@ -4497,6 +4497,12 @@ header form {
 .rows img {
   margin-right: 3px;
 }
+.rows img.darken {
+  background-color: #000;
+}
+.rows img.darken:hover {
+  opacity: .5;
+}
 .grids {
   margin-bottom: 15px;
 }
@@ -5303,6 +5309,9 @@ ul.products li mark {
 }
 #order_comments_field .input-text {
   width: 142px;
+}
+.modal-body {
+  max-height: 600px !important;
 }
 .site-info {
   margin-bottom: 40px;

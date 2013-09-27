@@ -8,7 +8,14 @@
 	margin-bottom: 5px;
 	img {
 		margin-right: 3px;
+		&.darken{
+			background-color: #000;
+			&:hover {
+				opacity:.5;
+			}
+		}
 	}
+
 }
 
 .grids {
@@ -314,4 +321,8 @@ ul.products {
 	.input-text {
 		width: 142px;
 	}
+}
+
+.modal-body { 
+	max-height: 600px !important;
 }
