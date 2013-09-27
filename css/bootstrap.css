@@ -4499,6 +4499,10 @@ header form {
 }
 .rows img.darken {
   background-color: #000;
+  -webkit-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s;
 }
 .rows img.darken:hover {
   opacity: .5;
@@ -5311,7 +5315,7 @@ ul.products li mark {
   width: 142px;
 }
 .modal-body {
-  max-height: 600px !important;
+  max-height: inherit !important;
 }
 .site-info {
   margin-bottom: 40px;
