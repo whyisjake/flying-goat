@@ -5315,7 +5315,7 @@ ul.products li mark {
   width: 142px;
 }
 .modal-body {
-  max-height: inherit !important;
+  max-height: 500px !important;
 }
 .site-info {
   margin-bottom: 40px;
