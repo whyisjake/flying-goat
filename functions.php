@@ -238,3 +238,34 @@ function goat_generate_image_modal( $str, $size ) {
 	}
 	return $output;
 }
+
+add_shortcode( 'cats', 'goat_category_list' );
+/**
+ * Generate a list of a titles of product categories.
+ * 
+ * @param int $cat Category ID of the product category that you want titles for.
+ */
+function goat_category_list( $atts ) {
+
+	$term = get_term_by( 'slug', $atts['cat'], 'product_cat' );
+
+	$output = '<h3>' . $term->name . '</h3>';
+
+	$output .= '<ul class="unstyled products_list">';
+		$args = array(
+			'post_type'			=> 'product',
+			'posts_per_page'	=> 100,
+			'product_cat'		=> $atts['cat']
+			);
+		$loop = new WP_Query( $args );
+		if ( $loop->have_posts() ) {
+			while ( $loop->have_posts() ) : $loop->the_post();
+				$output .= '<li><a href="' . get_permalink() . '">' . get_the_title() . '</a><li>';
+			endwhile;
+		} else {
+			echo __( 'No products found' );
+		}
+		wp_reset_postdata();
+	$output .= '</ul><!--/.products-->';
+	return $output;
+}
