@@ -5328,21 +5328,24 @@ ul.products li mark {
 .post-24 h1 {
   display: none;
 }
-.site-info {
+.site-footer {
+  margin-top: 30px;
+}
+.site-footer .site-info {
   margin-bottom: 40px;
 }
-.site-info ul {
+.site-footer .site-info ul {
   border-top: 1px solid black;
   list-style: none;
   list-style-image: none;
   margin: 0;
   padding: 0;
 }
-.site-info ul:after {
+.site-footer .site-info ul:after {
   content: "";
   margin-left: 100%;
 }
-.site-info ul li {
+.site-footer .site-info ul li {
   display: inline;
   list-style-type: none;
   padding: 10px 100px;
@@ -5351,33 +5354,33 @@ ul.products li mark {
   /* font-weight: bold; */
 
 }
-.site-info ul li a {
+.site-footer .site-info ul li a {
   display: inline-block;
   color: black;
 }
-.site-info ul li:nth-child(2) {
+.site-footer .site-info ul li:nth-child(2) {
   border-left: 1px solid black;
   border-right: 1px solid black;
 }
-.site-info p {
+.site-footer .site-info p {
   font-size: 16px;
   text-align: center;
   border-bottom: 1px solid black;
   padding-bottom: 10px;
 }
-.site-info p a {
+.site-footer .site-info p a {
   color: black;
 }
-.site-info .meta {
+.site-footer .site-info .meta {
   font-size: 11px;
   text-align: center;
   border: 0px;
   color: #b3b3b3;
 }
-.site-info .meta a {
+.site-footer .site-info .meta a {
   color: #b3b3b3;
 }
-.site-info .meta form {
+.site-footer .site-info .meta form {
   display: inline;
   display: inline-block;
   margin-left: 10px;

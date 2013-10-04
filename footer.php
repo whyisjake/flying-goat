@@ -10,7 +10,7 @@
 
 	</div><!-- #main -->
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
+	<footer id="colophon" class="site-footer clearfix" role="contentinfo">
 		<div class="site-info">
 			<div class="meta">&copy; <?php date('Y'); ?> Flying Goat Coffee <a href="/my-account/">MY ACCOUNT</a> &bull; <a href="/terms-conditions/">TERMS + CONDITIONS</a> &bull; <a href="/privacy-policy/">PRIVACY POLICY</a> &bull; <a href="/my-account/">ORDERING + SHIPPING</a> 
 				<form class="form-inline">
