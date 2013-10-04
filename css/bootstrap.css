@@ -2620,6 +2620,7 @@ input[type="submit"].btn.btn-mini {
 .menu-item-194,
 .menu-item-242 {
   background: url('../img/facebook_alt.png') no-repeat;
+  background-position: center;
   text-indent: -9999px;
 }
 .menu-item-194 a,
