@@ -263,7 +263,7 @@ function goat_category_list( $atts ) {
 				$output .= '<li><a href="' . get_permalink() . '">' . get_the_title() . '</a><li>';
 			endwhile;
 		} else {
-			echo __( 'No products found' );
+			$output .= __( 'No products found' );
 		}
 		wp_reset_postdata();
 	$output .= '</ul><!--/.products-->';
