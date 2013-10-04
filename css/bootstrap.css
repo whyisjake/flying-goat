@@ -5316,6 +5316,9 @@ ul.products li mark {
 .modal-body {
   max-height: 500px !important;
 }
+.post-24 h1 {
+  display: none;
+}
 .site-info {
   margin-bottom: 40px;
 }
