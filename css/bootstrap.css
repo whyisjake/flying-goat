@@ -4540,6 +4540,8 @@ header form {
 }
 .product_title {
   font-size: 16px;
+  line-height: 120%;
+  margin: 0px 0px 10px;
 }
 .related.products h2,
 .panel.entry-content h2 {
