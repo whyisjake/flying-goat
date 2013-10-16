@@ -157,4 +157,8 @@ $woocommerce->show_messages();
 
 </div>
 
+<div class="ssl">
+	<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/RapidSSL_SEAL-90x50.gif" alt="Secure SSL">
+</div>
+
 <?php do_action( 'woocommerce_after_cart' ); ?>
