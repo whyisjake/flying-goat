@@ -4528,6 +4528,13 @@ header form {
   list-style-type: none;
   font-weight: bold;
 }
+.sidebar .menu li {
+  font-weight: normal;
+}
+.sidebar .menu li.current-product-parent,
+.sidebar .menu li.bold {
+  font-weight: bold;
+}
 .sidebar .menu li ul {
   font-weight: normal;
   margin-left: 0px;

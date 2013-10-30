@@ -103,10 +103,6 @@ function flying_goat_widgets_init() {
 		'before_title'  => '<h3 class="widget-title">',
 		'after_title'   => '</h3>',
 	) );
-}
-add_action( 'widgets_init', 'flying_goat_widgets_init' );
-
-function flying_goat_widgets_init1() {
 	register_sidebar( array(
 		'name'          => __( 'Commerce Sidebar', 'flying_goat' ),
 		'id'            => 'sidebar-commerce',
@@ -116,7 +112,12 @@ function flying_goat_widgets_init1() {
 		'after_title'   => '</h3>',
 	) );
 }
-add_action( 'widgets_init', 'flying_goat_widgets_init1' );
+add_action( 'widgets_init', 'flying_goat_widgets_init' );
+
+/**
+ * Allow text widgets to output shortcodes
+ */
+add_filter('widget_text', 'do_shortcode', 11);
 
 /**
  * Enqueue scripts and styles
@@ -249,7 +250,7 @@ function goat_category_list( $atts ) {
 
 	$term = get_term_by( 'slug', $atts['cat'], 'product_cat' );
 
-	$output = '<h3>' . $term->name . '</h3>';
+	$output = (  $term != false ) ? '<h3>' . $term->name . '</h3>' : '';
 
 	$output .= '<ul class="unstyled products_list">';
 		$args = array(
@@ -261,6 +262,43 @@ function goat_category_list( $atts ) {
 		if ( $loop->have_posts() ) {
 			while ( $loop->have_posts() ) : $loop->the_post();
 				$output .= '<li><a href="' . get_permalink() . '">' . get_the_title() . '</a><li>';
+			endwhile;
+		} else {
+			$output .= __( 'No products found' );
+		}
+		wp_reset_postdata();
+	$output .= '</ul><!--/.products-->';
+	return $output;
+}
+
+
+add_shortcode( 'cat', 'goat_category_sidebar_list' );
+/**
+ * Generate a list of a titles of product categories.
+ * 
+ * @param int $cat Category ID of the product category that you want titles for.
+ */
+function goat_category_sidebar_list( $atts ) {
+
+	global $post;
+
+	$post_ID = get_the_ID();
+
+	$term = get_term_by( 'slug', $atts['cat'], 'product_cat' );
+
+	$output = '<ul id="menu-coffee-sidebar" class="menu products_list">';
+		
+		$output .= ( isset( $term->name ) ) ? '<li class="bold">' . $term->name . '</li>' : '';
+	
+		$args = array(
+			'post_type'			=> 'product',
+			'posts_per_page'	=> 100,
+			'product_cat'		=> $atts['cat']
+			);
+		$loop = new WP_Query( $args );
+		if ( $loop->have_posts() ) {
+			while ( $loop->have_posts() ) : $loop->the_post();
+				$output .= ( $post_ID == get_the_ID() ) ? '<li class="current-menu-item"><a href="' . get_permalink() . '">' . get_the_title() . '</a><li>' : '<li><a href="' . get_permalink() . '">' . get_the_title() . '</a><li>' ;
 			endwhile;
 		} else {
 			$output .= __( 'No products found' );
