@@ -3986,6 +3986,9 @@ a.thumbnail:focus {
   margin-left: 0;
   list-style: none;
 }
+.product-image {
+  margin-top: 30px;
+}
 .label,
 .badge {
   display: inline-block;
