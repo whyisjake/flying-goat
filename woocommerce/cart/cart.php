@@ -24,7 +24,6 @@ $woocommerce->show_messages();
 	<thead>
 		<tr>
 			<th class="product-remove">&nbsp;</th>
-			<th class="product-thumbnail">&nbsp;</th>
 			<th class="product-name"><?php _e( 'Product', 'woocommerce' ); ?></th>
 			<th class="product-price"><?php _e( 'Price', 'woocommerce' ); ?></th>
 			<th class="product-quantity"><?php _e( 'Quantity', 'woocommerce' ); ?></th>
@@ -45,18 +44,6 @@ $woocommerce->show_messages();
 						<td class="product-remove">
 							<?php
 								echo apply_filters( 'woocommerce_cart_item_remove_link', sprintf('<a href="%s" class="remove" title="%s">&times;</a>', esc_url( $woocommerce->cart->get_remove_url( $cart_item_key ) ), __( 'Remove this item', 'woocommerce' ) ), $cart_item_key );
-							?>
-						</td>
-
-						<!-- The thumbnail -->
-						<td class="product-thumbnail">
-							<?php
-								$thumbnail = apply_filters( 'woocommerce_in_cart_product_thumbnail', $_product->get_image(), $values, $cart_item_key );
-
-								if ( ! $_product->is_visible() || ( ! empty( $_product->variation_id ) && ! $_product->parent_is_visible() ) )
-									echo $thumbnail;
-								else
-									printf('<a href="%s">%s</a>', esc_url( get_permalink( apply_filters('woocommerce_in_cart_product_id', $values['product_id'] ) ) ), $thumbnail );
 							?>
 						</td>
 
