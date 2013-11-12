@@ -5260,6 +5260,7 @@ table.checkout .table {
 }
 .form-row .input-text {
   float: right;
+  width: 50%;
 }
 .col2-set {
   *zoom: 1;
