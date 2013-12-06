@@ -225,12 +225,13 @@ function goat_generate_image_modal( $str, $size ) {
 		$output .= '<img src="' . esc_url( $url[0] ) . '" class="darken" alt="' . get_the_title( $str ) . '">';
 		$output .= "</a>";
 		if ( !$meta ) :
+			$content = apply_filters( 'the_content', get_post( $str )->post_content );
 			$output .= '<div id="modal-' . $rand . '" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">';
 			$output .= '<div class="modal-header"> <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>';
 			$output .= '<h3>' . get_the_title( $str ) . '</h3></div>';
 			$output .=	'<div class="modal-body">';
-			$output .= wp_get_attachment_image( $str, 'modal' );
-			$output .= apply_filters( 'the_content', get_post( $str )->post_content );
+			$output .= ( !empty( $content ) ) ? wp_get_attachment_image( $str, 'modal has-caption' ) : wp_get_attachment_image( $str, 'modal no-caption' ); ;
+			$output .= $content;
 			$output .= '</div></div>';
 		endif;
 
