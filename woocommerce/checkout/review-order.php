@@ -182,6 +182,13 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 
 		<div class="form-row place-order">
 
+			<?php if (woocommerce_get_page_id('terms')>0) : ?>
+			<p class="form-row terms">
+				<label for="terms" class="checkbox"><?php _e( 'I have read and accept the', 'woocommerce' ); ?> <a href="<?php echo esc_url( get_permalink(woocommerce_get_page_id('terms')) ); ?>" target="_blank"><?php _e( 'terms &amp; conditions', 'woocommerce' ); ?></a></label>
+				<input type="checkbox" class="input-checkbox" name="terms" <?php checked( isset( $_POST['terms'] ), true ); ?> id="terms" />
+			</p>
+			<?php endif; ?>
+
 			<noscript><?php _e( 'Since your browser does not support JavaScript, or it is disabled, please ensure you click the <em>Update Totals</em> button before placing your order. You may be charged more than the amount stated above if you fail to do so.', 'woocommerce' ); ?><br/><input type="submit" class="button alt" name="woocommerce_checkout_update_totals" value="<?php _e( 'Update totals', 'woocommerce' ); ?>" /></noscript>
 
 			<?php $woocommerce->nonce_field('process_checkout')?>
@@ -194,12 +201,6 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 			echo apply_filters('woocommerce_order_button_html', '<input type="submit" class="button alt" name="woocommerce_checkout_place_order" id="place_order" value="' . $order_button_text . '" />' );
 			?>
 
-			<?php if (woocommerce_get_page_id('terms')>0) : ?>
-			<p class="form-row terms">
-				<label for="terms" class="checkbox"><?php _e( 'I have read and accept the', 'woocommerce' ); ?> <a href="<?php echo esc_url( get_permalink(woocommerce_get_page_id('terms')) ); ?>" target="_blank"><?php _e( 'terms &amp; conditions', 'woocommerce' ); ?></a></label>
-				<input type="checkbox" class="input-checkbox" name="terms" <?php checked( isset( $_POST['terms'] ), true ); ?> id="terms" />
-			</p>
-			<?php endif; ?>
 
 			<?php do_action( 'woocommerce_review_order_after_submit' ); ?>
 
